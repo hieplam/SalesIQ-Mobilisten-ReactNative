@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
                   }
   s.author        = { "Rishabh Raghunath" => "rishabh.r@zohocorp.com" }
   s.platform      = :ios, "9.0"
-  s.source        = { :git => "https://github.com/hieplam/SalesIQ-Mobilisten-iOS", :tag => "v#{s.version}" }
+  s.source        = { :git => "https://github.com/hieplam/SalesIQ-Mobilisten-iOS1", :tag => "v#{s.version}" }
   s.source_files  = "*.{h,m}"
   s.requires_arc  = true
 
