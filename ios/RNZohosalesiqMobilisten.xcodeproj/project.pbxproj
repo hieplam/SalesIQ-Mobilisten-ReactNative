@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2921AB8BBADBA846EAA29C /* Pods_RNZohosalesiqMobilisten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451E65C5F09085FD18962B59 /* Pods_RNZohosalesiqMobilisten.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNZohoSalesIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNZohoSalesIQ.m */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +24,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNZohosalesiqMobilisten.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNZohosalesiqMobilisten.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		451E65C5F09085FD18962B59 /* Pods_RNZohosalesiqMobilisten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNZohosalesiqMobilisten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNZohoSalesIQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNZohoSalesIQ.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNZohoSalesIQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNZohoSalesIQ.m; sourceTree = "<group>"; };
-		DFFBCA5EFB10A4750EEB91A6 /* Pods-RNZohosalesiqMobilisten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNZohosalesiqMobilisten.debug.xcconfig"; path = "Target Support Files/Pods-RNZohosalesiqMobilisten/Pods-RNZohosalesiqMobilisten.debug.xcconfig"; sourceTree = "<group>"; };
-		FA4579E82FDA5ADA0C8B1B54 /* Pods-RNZohosalesiqMobilisten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNZohosalesiqMobilisten.release.xcconfig"; path = "Target Support Files/Pods-RNZohosalesiqMobilisten/Pods-RNZohosalesiqMobilisten.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2921AB8BBADBA846EAA29C /* Pods_RNZohosalesiqMobilisten.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,27 +53,7 @@
 				B3E7B5881CC2AC0600A0062D /* RNZohoSalesIQ.h */,
 				B3E7B5891CC2AC0600A0062D /* RNZohoSalesIQ.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				7E203FC8543378093E438042 /* Pods */,
-				72FD741789D88CF6947DCAE3 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		72FD741789D88CF6947DCAE3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				451E65C5F09085FD18962B59 /* Pods_RNZohosalesiqMobilisten.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7E203FC8543378093E438042 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DFFBCA5EFB10A4750EEB91A6 /* Pods-RNZohosalesiqMobilisten.debug.xcconfig */,
-				FA4579E82FDA5ADA0C8B1B54 /* Pods-RNZohosalesiqMobilisten.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,7 +63,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNZohosalesiqMobilisten" */;
 			buildPhases = (
-				E099BBC938AA89AEB075408E /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -133,31 +107,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E099BBC938AA89AEB075408E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNZohosalesiqMobilisten-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -254,7 +203,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFFBCA5EFB10A4750EEB91A6 /* Pods-RNZohosalesiqMobilisten.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -271,7 +219,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA4579E82FDA5ADA0C8B1B54 /* Pods-RNZohosalesiqMobilisten.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
