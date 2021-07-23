@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
                           SOFTWARE
                           LICENSE
                   }
-  s.author        = { "Rishabh Raghunath" => "rishabh.r@zohocorp.com" }
+  s.author        = { "hieplam" => "lamhiep16@gmail.com" }
   s.platform      = :ios, "9.0"
-  s.source        = { :git => "https://github.com/hieplam/SalesIQ-Mobilisten-iOS", :branch => "master" }
+  s.source        = { :git => "https://github.com/hieplam/SalesIQ-Mobilisten-iOS", :tag => "master" }
   s.source_files  = "*.{h,m}"
   s.requires_arc  = true
 
